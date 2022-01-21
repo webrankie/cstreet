@@ -1,0 +1,22 @@
+{
+  "name": "cstreet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testHeaded": "npx cypress run --spec 'cypress/integration/_smoke/*.spec.js' --browser chrome --headed --env allure=true",
+    "cy:run": "cypress run --env allure=true",
+    "report:generate": "npx allure generate allure-results -o allure-report --clean",
+    "report:open": "npx allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.23.0",
+    "allure-commandline": "^2.17.2",
+    "cypress": "^9.3.1",
+    "eslint": "^8.7.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}

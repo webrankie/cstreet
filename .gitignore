@@ -1,0 +1,8 @@
+.idea
+allure-results
+allure-report
+node_modules
+.git
+package-lock.json
+/cypress/screenshots/
+/cypress/videos/
