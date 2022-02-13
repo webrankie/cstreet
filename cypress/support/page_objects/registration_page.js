@@ -13,6 +13,8 @@ class LoginPage extends BasePage {
     checkBtn = () => cy.get('[data-testid="hasAgreedTos"]')
     createAccountBtn = () => cy.get('[data-testid="submit-button"]')
 
+    homeCreateAccBtn = () => cy.get('//div[@class="css-108j06w"]/a[.="Create An Account"]')
+
 
     open() {
         return super.open('/invexp/accounts/create-account');
